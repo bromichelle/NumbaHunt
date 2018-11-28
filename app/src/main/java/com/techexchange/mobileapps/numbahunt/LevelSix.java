@@ -1,23 +1,22 @@
 package com.techexchange.mobileapps.numbahunt;
 
-import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class LevelSeven extends AppCompatActivity {
-
-
+public class LevelSix extends AppCompatActivity {
     String inputAnswer = "";
+    String correctAnswer = "1237";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_level_seven);
+        setContentView(R.layout.activity_level_six);
     }
-
 
     public void buttonClicked (View view) {
 
@@ -39,32 +38,16 @@ public class LevelSeven extends AppCompatActivity {
         answer.setText(String.valueOf(inputAnswer));
     }
 
-    public Boolean testAnswer (String inputAnswer){
-        for (int i = 0; i < inputAnswer.length(); i++){
-            if (i % 2 == 1) {
-                if (inputAnswer.charAt(i) % 2 != 1){
-                    return false;
-                }
-            }
-            else if (i % 2 == 0) {
-                if (inputAnswer.charAt(i) % 2 != 0){
-                    return false;
-                }
-            }
-        }
-        return true;
-    }
-
-
-
     public void correctString (View view) {
 
-        Boolean correctness = testAnswer(inputAnswer);
 
-        if (correctness) {
+        if (inputAnswer.equals(correctAnswer)) {
             Toast.makeText(this, "Congrats!", Toast.LENGTH_LONG).show();
 
+            Intent nextLevel = new Intent(LevelSix.this, LevelEight.class);
+            startActivity(nextLevel);
         }
+
         else {
             Toast.makeText(this,"Sorry Try Again", Toast.LENGTH_LONG).show();
 
@@ -75,3 +58,5 @@ public class LevelSeven extends AppCompatActivity {
 
     }
 }
+
+

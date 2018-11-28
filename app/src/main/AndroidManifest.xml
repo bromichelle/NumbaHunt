@@ -22,7 +22,8 @@
             android:resource="@array/preloaded_fonts" />
 
         <activity android:name=".LevelOne" />
-        <activity android:name=".LevelTwo"></activity>
+        <activity android:name=".LevelTwo" />
+        <activity android:name=".LevelSeven"></activity>
     </application>
 
 </manifest>

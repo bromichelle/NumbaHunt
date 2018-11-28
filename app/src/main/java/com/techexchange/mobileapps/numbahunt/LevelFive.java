@@ -1,24 +1,25 @@
 package com.techexchange.mobileapps.numbahunt;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class LevelTwo extends AppCompatActivity {
+public class LevelFive extends AppCompatActivity {
 
 
     String inputAnswer = "";
-    String correctAnswer = "246810";
+    String correctAnswer = "510";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_level_two);
+        setContentView(R.layout.activity_level_five);
     }
+
 
     public void buttonClicked (View view) {
 
@@ -42,13 +43,12 @@ public class LevelTwo extends AppCompatActivity {
 
     public void correctString (View view) {
 
-        if (inputAnswer.equals(correctAnswer)){
+        if (inputAnswer.equals(correctAnswer)) {
             Toast.makeText(this, "Congrats!", Toast.LENGTH_LONG).show();
 
-            Intent nextLevel = new Intent(LevelTwo.this, LevelFive.class);
+            Intent nextLevel = new Intent(LevelFive.this, LevelSix.class);
             startActivity(nextLevel);
         }
-
         else {
             Toast.makeText(this,"Sorry Try Again", Toast.LENGTH_LONG).show();
 
@@ -58,4 +58,7 @@ public class LevelTwo extends AppCompatActivity {
         }
 
     }
+
+
+
 }

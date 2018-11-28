@@ -13,9 +13,9 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/lobster"
         android:textColor="@android:color/white"
-        android:paddingTop="15dp"
+        android:padding="20dp"
         android:textAlignment="center"
-        android:text="Enter a string of consecutive prime numbers (numbers whose factors are one and itself)."
+        android:text="Enter a string of consecutive prime numbers."
         android:textSize="32sp" />
 
     <TextView
@@ -23,9 +23,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/lobster"
-        android:paddingTop="30dp"
+        android:paddingTop="13dp"
         android:textColor="@android:color/white"
-        android:paddingBottom="50dp"
+        android:layout_marginBottom="13dp"
         android:textAlignment="center"
         android:textSize="30sp"
         android:text="" />

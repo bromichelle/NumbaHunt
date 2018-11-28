@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 public class LevelSix extends AppCompatActivity {
     String inputAnswer = "";
-    String correctAnswer = "12357";
+    String correctAnswer = "1237";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

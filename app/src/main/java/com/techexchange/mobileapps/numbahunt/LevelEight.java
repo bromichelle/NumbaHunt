@@ -16,7 +16,7 @@ public class LevelEight extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_level_six);
+        setContentView(R.layout.activity_level_eight);
     }
 
     public void buttonClicked (View view) {

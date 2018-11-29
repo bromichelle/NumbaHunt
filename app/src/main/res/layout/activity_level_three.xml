@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#b4a7d6"
+    tools:context=".LevelThree">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lobster"
+        android:textColor="@android:color/white"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:text="Level 3"
+        android:textSize="32sp"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lobster"
+        android:textColor="@android:color/white"
+        android:padding="20dp"
+        android:textAlignment="center"
+        android:text="Enter 3 multiples of 3"
+        android:textSize="32sp"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/userAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lobster"
+        android:paddingTop="20dp"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="13dp"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:text="" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/buttonOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="1"
+            android:textColor="#0000FF"
+            android:onClick="buttonClicked"/>
+
+        <Button
+            android:id="@+id/buttonTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="2"
+            android:textColor="#0000FF"
+            android:onClick="buttonClicked"/>
+
+        <Button
+            android:id="@+id/buttonThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="3"
+            android:textColor="#0000FF"
+            android:onClick="buttonClicked"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/buttonFour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="#0000FF"
+            android:text="4"
+            android:onClick="buttonClicked"/>
+        <Button
+            android:id="@+id/buttonFive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="#0000FF"
+            android:text="5"
+            android:onClick="buttonClicked"/>
+        <Button
+            android:id="@+id/buttonSix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="#0000FF"
+            android:text="6"
+            android:onClick="buttonClicked"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/buttonSeven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="7"
+            android:textColor="#0000FF"
+            android:onClick="buttonClicked"/>
+        <Button
+            android:id="@+id/buttonEight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="8"
+            android:textColor="#0000FF"
+            android:onClick="buttonClicked"/>
+        <Button
+            android:id="@+id/buttonNine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="9"
+            android:textColor="#0000FF"
+            android:onClick="buttonClicked"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/buttonTen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="10"
+            android:textColor="#0000FF"
+            android:onClick="buttonClicked"/>
+
+        <Button
+            android:id="@+id/buttonDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:layout_gravity="right"
+            android:text="DEL"
+            android:textColor="#ff42c1"
+            android:onClick="decrementString"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:padding="13dp"
+        android:text="SUBMIT"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif"
+        android:background="#ff42c1"
+        android:onClick="correctString"/>
+
+</LinearLayout>

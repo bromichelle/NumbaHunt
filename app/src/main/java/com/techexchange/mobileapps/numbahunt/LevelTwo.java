@@ -45,8 +45,8 @@ public class LevelTwo extends AppCompatActivity {
         if (inputAnswer.equals(correctAnswer)) {
             Toast.makeText(this, "Congrats!", Toast.LENGTH_LONG).show();
 
-            //Intent nextLevel = new Intent(LevelTwo.this, LevelTw.class);
-            //startActivity(nextLevel);
+            Intent nextLevel = new Intent(LevelTwo.this, LevelFour.class);
+            startActivity(nextLevel);
         }
         else {
             Toast.makeText(this,"Sorry Try Again", Toast.LENGTH_LONG).show();

@@ -1,5 +1,6 @@
 package com.techexchange.mobileapps.numbahunt;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -62,8 +63,8 @@ public class LevelSeven extends AppCompatActivity {
         if (isCorrect) {
             Toast.makeText(this, "Congrats!", Toast.LENGTH_LONG).show();
 
-            //Intent nextLevel = new Intent(LevelSeven.this, LevelEight.class);
-            //startActivity(nextLevel);
+            Intent nextLevel = new Intent(LevelSeven.this, LevelEight.class);
+            startActivity(nextLevel);
         }
         else {
             Toast.makeText(this,"Sorry Try Again", Toast.LENGTH_LONG).show();

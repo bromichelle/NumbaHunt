@@ -21,8 +21,11 @@
 
         <activity android:name=".LevelTwo" />
         <activity android:name=".LevelOne" />
+        <activity android:name=".LevelFour"/>
         <activity android:name=".LevelFive" />
         <activity android:name=".LevelSix" />
         <activity android:name=".LevelSeven"/>
+        <activity android:name=".LevelEight"/>
+
     </application>
 </manifest>

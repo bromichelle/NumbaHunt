@@ -11,7 +11,6 @@ import android.widget.Toast;
 public class LevelEight extends AppCompatActivity {
 
     String inputAnswer = "";
-    String correctAnswer = "12357";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,13 +38,27 @@ public class LevelEight extends AppCompatActivity {
         answer.setText(String.valueOf(inputAnswer));
     }
 
+    public  Boolean testAnswer (String inputAnswer){
+        for (int i = 0; i < inputAnswer.length(); i++)
+        {
+            if ((inputAnswer.charAt(i) % 2 == 0) ||  (inputAnswer.charAt(i) % 3 ==0))
+            {
+                continue;
+            }
+            else {
+                return false;
+            }
+        }
+        return true;
+    }
+
     public void correctString (View view) {
 
-        if (inputAnswer.equals(correctAnswer)) {
+        Boolean isCorrect = testAnswer(inputAnswer);
+
+        if (isCorrect){
             Toast.makeText(this, "Congrats!", Toast.LENGTH_LONG).show();
 
-            //Intent nextLevel = new Intent(LevelEight.this, LevelNine.class);
-            //startActivity(nextLevel);
         }
 
         else {

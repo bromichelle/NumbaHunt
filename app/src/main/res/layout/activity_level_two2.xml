@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:background="#b4a7d6"
     android:layout_height="match_parent"
     tools:context=".LevelTwo">
+
 
     <TextView
         android:layout_width="match_parent"
@@ -15,8 +16,9 @@
         android:textColor="@android:color/white"
         android:padding="20dp"
         android:textAlignment="center"
-        android:text="Enter a string of 5 ascending consecutive even numbers"
-        android:textSize="32sp" />
+        android:text="Enter a string of 5 ascending consecutive even numbers."
+        android:textSize="32sp"
+        android:layout_marginBottom="55dp"/>
 
     <TextView
         android:id="@+id/userAnswer"
@@ -167,10 +169,11 @@
         android:textSize="24sp"
         android:layout_marginTop="20dp"
         android:layout_gravity="center"
+        android:padding="13dp"
         android:text="SUBMIT"
-        android:textColor="#BCFFBC"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif"
+        android:background="#43C2C2"
         android:onClick="correctString"/>
-
-
 
 </LinearLayout>

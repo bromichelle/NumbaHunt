@@ -1,22 +1,23 @@
 package com.techexchange.mobileapps.numbahunt;
 
-import android.content.Intent;
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class LevelSix extends AppCompatActivity {
+public class LevelSeven extends AppCompatActivity {
+
     String inputAnswer = "";
-    String correctAnswer = "12357";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_level_six);
+        setContentView(R.layout.activity_level_seven);
     }
+
 
     public void buttonClicked (View view) {
 
@@ -38,16 +39,32 @@ public class LevelSix extends AppCompatActivity {
         answer.setText(String.valueOf(inputAnswer));
     }
 
+    public  Boolean testAnswer (String inputAnswer){
+        for (int i = 0; i < inputAnswer.length(); i++){
+            if (i % 2 == 1) {
+                if (inputAnswer.charAt(i) % 2 != 1){
+                    return false;
+                }
+            }
+            else if (i % 2 == 0) {
+                if (inputAnswer.charAt(i) % 2 != 0){
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+
     public void correctString (View view) {
 
+        Boolean isCorrect = testAnswer(inputAnswer);
 
-        if (inputAnswer.equals(correctAnswer)) {
+        if (isCorrect) {
             Toast.makeText(this, "Congrats!", Toast.LENGTH_LONG).show();
 
-            Intent nextLevel = new Intent(LevelSix.this, LevelSeven.class);
-            startActivity(nextLevel);
+            //Intent nextLevel = new Intent(LevelSeven.this, LevelEight.class);
+            //startActivity(nextLevel);
         }
-
         else {
             Toast.makeText(this,"Sorry Try Again", Toast.LENGTH_LONG).show();
 
@@ -57,6 +74,5 @@ public class LevelSix extends AppCompatActivity {
         }
 
     }
+
 }
-
-

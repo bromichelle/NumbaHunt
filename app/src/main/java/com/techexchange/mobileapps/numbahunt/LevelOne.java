@@ -12,7 +12,7 @@ import android.widget.Toast;
 public class LevelOne extends AppCompatActivity {
 
     String inputAnswer = "";
-    String correctAnswer = "1234567910";
+    String correctAnswer = "12345678910";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

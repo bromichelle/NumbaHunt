@@ -4,6 +4,9 @@
 
     <application>
         <activity android:name=".LevelTwo" />
+        <activity android:name=".LevelOne" />
+        <activity android:name=".LevelFive" />
+        <activity android:name=".LevelSix" />
         <activity android:name=".LevelSeven"></activity>
     </application>
 
